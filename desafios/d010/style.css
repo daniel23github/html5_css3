@@ -1,0 +1,139 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'android';
+    src: url(fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+body {
+    font-family: arial, helvetica, sans-serif;
+    background-color: #f85e46;
+}
+
+header {
+    background-image: linear-gradient(to bottom, #fc5a42, #b60f09);
+}
+
+header > h1 {
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    padding-top: 16px;
+    font-family: "Bebas Neue";
+}
+
+header > p {
+    text-align: center;
+    color: white;
+    font-size: 0.8em;
+
+}
+
+nav {
+    padding-bottom: 5px;
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    margin-left: 10px;
+    font-size: 0.8em;
+    padding: 5px;
+
+}
+
+nav > a:hover {
+    background-color: red;
+}
+
+main {
+    background-color: white;
+    width: 800px;
+    margin: auto;
+    padding: 10px;
+    box-shadow:  3px 3px 0px #00000067;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+main > h2 {
+    font-family: android;
+    color: #b60f09;
+}
+
+main > p {
+    text-indent: 40px;
+    text-align: justify;
+}
+
+.link_externo::after {
+    content: " 🔗";
+}
+
+.link_externo {
+    color: #b60b33;
+    text-decoration: none;
+}
+
+main > h3 {
+    font-family: android;
+    color: #b60f09;
+    background-color: #f85e46; 
+    padding: 4px;
+    
+}
+
+main > img#bugdroid {
+    margin: auto;
+    display: block;
+}
+
+aside {
+    background-color: #E33E0B;
+    border-radius: 9px 9px; 
+}
+
+aside > p#qsm {
+    text-align: left;
+    padding: 8px;
+    background-color: #b60f09; 
+    text-indent: 0px;
+    color: white;
+    font-weight: bold;
+    border-top-right-radius: 9px;
+    border-top-left-radius: 9px;
+
+
+}
+
+aside > p {
+    text-indent: 40px;
+    text-align: justify;
+    padding: 10px 10px 0px 10px;
+
+}
+
+aside > article > ul {
+    display: inline-block;
+    width: 350px
+}
+
+aside > article > ul > li > a{
+    color: black;
+
+}
+
+footer {
+    background-color: #612406;
+}
+
+footer > p {
+    color: white;
+    text-align: center;
+    padding: 8px;
+}
