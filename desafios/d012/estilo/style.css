@@ -1,11 +1,20 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@700&family=Quando&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
+:root {
+    --normal: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte-c: 'Cormorant', cursive;
+    --fonte-q: 'Quando', cursive;
+}
+
 html, body {
+    font-family: var(--normal);
     min-height: 100vh;
     background-color: darkgray;
 }
@@ -19,6 +28,9 @@ header {
 header > h1 {
     padding: 50px;
     font-variant: small-caps;
+    font-family: var(--font-c);
+    font-size: 8vw;
+
 }
 
 header > p {
@@ -51,6 +63,8 @@ section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
+    font-family: var(--fonte-q);
+    font-size: 3.5vw;
 }
 
 section.normal {
@@ -67,5 +81,7 @@ section.imagem {
 
 section.imagem > p {
     background-color: rgba(19, 18, 18, 0.411);
-    width: 400px;
+    display: inline-block;
+    padding: 5px;
+
 }
