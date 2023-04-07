@@ -12,6 +12,7 @@
         table {
             width: 500px;
             border-collapse: collapse;
+            position: relative;
             
         }
 
@@ -21,22 +22,44 @@
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(49, 46, 46);
             color: white;
+
+        }
+
+        thead > tr> th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(49, 46, 46);
         }
 
         .num {
             text-align: right;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            border: 1px solid black;
+        }
+        tbody > tr:nth-child(odd) {
+            background-color: white;
+        }
+        tbody tr:nth-child(even) {
+            background-color: lightgray;
         }
     </style>
 </head>
 <body>
     <h1>Uso de tabelas grandes</h1>
     <table>
+        <caption>População das Unidades Federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px">População</th>
             </tr>
         </thead>
         <tbody>
@@ -52,13 +75,99 @@
                 <td>Rio de Janeiro</td>
                 <td class="num">15.989.929</td>
             </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">41.262.199</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">19.597.330</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">15.989.929</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">41.262.199</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">19.597.330</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">15.989.929</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">41.262.199</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">19.597.330</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">15.989.929</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">41.262.199</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">19.597.330</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">15.989.929</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">41.262.199</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">19.597.330</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">15.989.929</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">41.262.199</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">19.597.330</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">15.989.929</td>
+            </tr>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">41.262.199</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">19.597.330</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">15.989.929</td>
+            </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num">76.849.458</td>
             </tr>
         </tfoot>
     </table>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus totam facere excepturi aut id consectetur distinctio sed asperiores placeat repellendus. Excepturi quasi hic laudantium blanditiis numquam, ullam odio porro possimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga asperiores aspernatur maiores quia atque distinctio, delectus optio tempora corporis? Laudantium sit corporis dolore accusamus aperiam id vel! Tempore, aliquam unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, facilis? Reiciendis, assumenda. Neque quisquam veniam quidem hic sequi ipsa iste nobis reiciendis sit ab, quod eligendi quis praesentium aut consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit est blanditiis necessitatibus incidunt modi? Ipsum delectus perferendis fugit. Quas doloribus eos possimus deserunt perferendis odio blanditiis dolores id reprehenderit? Nam.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus totam facere excepturi aut id consectetur distinctio sed asperiores placeat repellendus. Excepturi quasi hic laudantium blanditiis numquam, ullam odio porro possimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga asperiores aspernatur maiores quia atque distinctio, delectus optio tempora corporis? Laudantium sit corporis dolore accusamus aperiam id vel! Tempore, aliquam unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, facilis? Reiciendis, assumenda. Neque quisquam veniam quidem hic sequi ipsa iste nobis reiciendis sit ab, quod eligendi quis praesentium aut consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit est blanditiis necessitatibus incidunt modi? Ipsum delectus perferendis fugit. Quas doloribus eos possimus deserunt perferendis odio blanditiis dolores id reprehenderit? Nam.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus totam facere excepturi aut id consectetur distinctio sed asperiores placeat repellendus. Excepturi quasi hic laudantium blanditiis numquam, ullam odio porro possimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga asperiores aspernatur maiores quia atque distinctio, delectus optio tempora corporis? Laudantium sit corporis dolore accusamus aperiam id vel! Tempore, aliquam unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, facilis? Reiciendis, assumenda. Neque quisquam veniam quidem hic sequi ipsa iste nobis reiciendis sit ab, quod eligendi quis praesentium aut consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit est blanditiis necessitatibus incidunt modi? Ipsum delectus perferendis fugit. Quas doloribus eos possimus deserunt perferendis odio blanditiis dolores id reprehenderit? Nam.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus totam facere excepturi aut id consectetur distinctio sed asperiores placeat repellendus. Excepturi quasi hic laudantium blanditiis numquam, ullam odio porro possimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga asperiores aspernatur maiores quia atque distinctio, delectus optio tempora corporis? Laudantium sit corporis dolore accusamus aperiam id vel! Tempore, aliquam unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, facilis? Reiciendis, assumenda. Neque quisquam veniam quidem hic sequi ipsa iste nobis reiciendis sit ab, quod eligendi quis praesentium aut consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit est blanditiis necessitatibus incidunt modi? Ipsum delectus perferendis fugit. Quas doloribus eos possimus deserunt perferendis odio blanditiis dolores id reprehenderit? Nam.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus totam facere excepturi aut id consectetur distinctio sed asperiores placeat repellendus. Excepturi quasi hic laudantium blanditiis numquam, ullam odio porro possimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga asperiores aspernatur maiores quia atque distinctio, delectus optio tempora corporis? Laudantium sit corporis dolore accusamus aperiam id vel! Tempore, aliquam unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, facilis? Reiciendis, assumenda. Neque quisquam veniam quidem hic sequi ipsa iste nobis reiciendis sit ab, quod eligendi quis praesentium aut consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit est blanditiis necessitatibus incidunt modi? Ipsum delectus perferendis fugit. Quas doloribus eos possimus deserunt perferendis odio blanditiis dolores id reprehenderit? Nam.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus totam facere excepturi aut id consectetur distinctio sed asperiores placeat repellendus. Excepturi quasi hic laudantium blanditiis numquam, ullam odio porro possimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga asperiores aspernatur maiores quia atque distinctio, delectus optio tempora corporis? Laudantium sit corporis dolore accusamus aperiam id vel! Tempore, aliquam unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, facilis? Reiciendis, assumenda. Neque quisquam veniam quidem hic sequi ipsa iste nobis reiciendis sit ab, quod eligendi quis praesentium aut consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit est blanditiis necessitatibus incidunt modi? Ipsum delectus perferendis fugit. Quas doloribus eos possimus deserunt perferendis odio blanditiis dolores id reprehenderit? Nam.Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus totam facere excepturi aut id consectetur distinctio sed asperiores placeat repellendus. Excepturi quasi hic laudantium blanditiis numquam, ullam odio porro possimus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga asperiores aspernatur maiores quia atque distinctio, delectus optio tempora corporis? Laudantium sit corporis dolore accusamus aperiam id vel! Tempore, aliquam unde? Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium, facilis? Reiciendis, assumenda. Neque quisquam veniam quidem hic sequi ipsa iste nobis reiciendis sit ab, quod eligendi quis praesentium aut consectetur. Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit est blanditiis necessitatibus incidunt modi? Ipsum delectus perferendis fugit. Quas doloribus eos possimus deserunt perferendis odio blanditiis dolores id reprehenderit? Nam.
+    </p>
 </body>
 </html>
