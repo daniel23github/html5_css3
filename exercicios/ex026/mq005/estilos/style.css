@@ -19,18 +19,18 @@ header > h1 {
     padding: 3px;
 }
 
-header > nav {
+header > menu {
     height: 28px;
 }
 
-header > nav > a {
+header > menu > ul > li > a {
     text-decoration: none;
     background-color: rgb(59, 58, 58);
     padding: 8px;    
     color: white;
 }
 
-header > nav> a:hover {
+header > menu > a:hover {
     background-color: rgb(92, 90, 90);
 }
 
